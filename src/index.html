@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>task3-bootstrap</title>
 </head>
+
 <body>
     <header class="header-books">
         <div class="container">
@@ -21,17 +23,101 @@
                     <ul class="list-group">
                         <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
                             <div class="row text-center">
-                                <div class="col-4">High Performance JavaScript</div>
+                                <div class="col-4 book">High Performance JavaScript</div>
                                 <div class="col-4">Nicholas C.</div>
                                 <div class="col-4">60$</div>
                             </div>
                             <div class="row">
                                 <div class="col d-flex justify-content-center mt-2">
-                                    <button type="button" class="btn bg-info" data-toggle="modal" data-target="#exampleModal">
+                                    <button type="button" class="btn bg-info btn-md" data-name="book1" data-toggle="modal" data-target="#viewDetails" data-whatever="./img/book1.jpg">
                                         View details
                                     </button>
                                 </div>
                             </div>
+                            <span class="details" data-name="book1">
+                                <p>If you're like most developers, you rely heavily on JavaScript to build interactive and quick-responding
+                                    web applications. The problem is that all of those lines of JavaScript code can slow
+                                    down your apps. This book reveals techniques and strategies to help you eliminate performance
+                                    bottlenecks during development. You'll learn how to improve execution time, downloading,
+                                    interaction with the DOM, page life cycle, and more. Yahoo! frontend engineer Nicholas
+                                    C. Zakas and five other JavaScript experts—Ross</p>
+                                <p>Harmes, Julien Lecomte, Steven Levithan, Stoyan Stefanov, and Matt Sweeney—demonstrate optimal
+                                    ways to load code onto a page, and offer programming tips to help your JavaScript run
+                                    as efficiently and quickly as possible. You'll learn the best practices to build and
+                                    deploy your files to a production environment, and tools that can help you find problems
+                                    once your site goes live.</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
+                            <div class="row text-center">
+                                <div class="col-4 book">Learning JavaScript Design Patterns</div>
+                                <div class="col-4">Addy Osmani.</div>
+                                <div class="col-4">10$</div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-2">
+                                    <button type="button" class="btn bg-info btn-md" data-name="book2" data-toggle="modal" data-target="#viewDetails" data-whatever="./img/book2.jpg">
+                                        View details
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="details" data-name="book2">
+                                Learning JavaScript Design Patterns is released under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0
+                                unported license. It is available for purchase via O'Reilly Media but will remain available
+                                for both free online and as a physical (or eBook) purchase for readers wishing to support
+                                the project.
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
+                            <div class="row text-center">
+                                <div class="col-4 book">Speaking JavaScript</div>
+                                <div class="col-4">Dr. Axel Rauschmayer.</div>
+                                <div class="col-4">40$</div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-2">
+                                    <button type="button" class="btn bg-info btn-md" data-name="book3" data-toggle="modal" data-target="#viewDetails" data-whatever="./img/book3.jpg">
+                                        View details
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="details" data-name="book3">
+                                <p>
+                                    This book has been written for programmers, by a programmer. In order to understand it, you should already know object-oriented
+                                    programming, for example, via a mainstream programming language such as Java, PHP, C++,
+                                    Python, Ruby, Objective-C, Swift, C#, or Perl.
+                                </p>
+                                <p>Thus, the book’s target audience is programmers who want to learn JavaScript quickly and
+                                    properly, and JavaScript programmers who want to deepen their skills and/or look up specific
+                                    topics.
+                                </p>
+                                <h4>
+                                    Speaking JavaScript has four parts:
+                                </h4>
+                                <ol>
+                                    <li class="mt-4">
+                                        <strong>JavaScript Quick Start:</strong> Learn a safe subset of JavaScript in less than 30
+                                        pages.
+                                    </li>
+                                    <li class="mt-4">
+                                        <strong>Background:</strong> When, why, and how was JavaScript created? How is it related
+                                        to other programming languages? What were the important steps that got us to where
+                                        we are today?</li>
+                                    <li class="mt-4">
+                                        <strong>JavaScript in Depth:</strong> This part is more of a reference: look for a topic
+                                        that you are interested in, jump in, and explore. I still tried to make it fun to
+                                        read.
+                                    </li>
+                                    <li class="mt-4">
+                                        <strong>Tips, Tools, and Libraries:</strong> This part gives tips for using JavaScript: best
+                                        practices, advanced techniques, and learning resources. It also describes a few important
+                                        tools and libraries.</li>
+                                </ol>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -39,22 +125,121 @@
                     <ul class="list-group">
                         <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
                             <div class="row text-center">
-                                <div class="col-4">Even Faster Web Sites</div>
-                                <div class="col-4"> Steve Souders</div>
-                                <div class="col-4">30$</div>
+                                <div class="col-4 book">Programming JavaScript Applications</div>
+                                <div class="col-4">Eric Elliott</div>
+                                <div class="col-4">6$</div>
                             </div>
                             <div class="row">
                                 <div class="col d-flex justify-content-center mt-2">
-                                    <button type="button" class="btn bg-info" data-toggle="modal" data-target="#exampleModal">
+                                    <button type="button" class="btn bg-info btn-md" data-name="book4" data-toggle="modal" data-target="#viewDetails" data-whatever="./img/book4.jpg">
                                         View details
                                     </button>
                                 </div>
                             </div>
+                            <span class="details" data-name="book4">
+                                <p>
+                                    Take advantage of JavaScript’s power to build robust web-scale or enterprise applications that are easy to extend and maintain.
+                                    By applying the design patterns outlined in this practical book, experienced JavaScript
+                                    developers will learn how to write flexible and resilient code that’s easier—yes, easier—to
+                                    work with as your code base grows.
+                                </p>
+                                <p>
+                                    JavaScript may be the most essential web programming language, but in the real world, JavaScript applications often break
+                                    when you make changes. With this book, author Eric Elliott shows you how to add client-
+                                    and server-side features to a large JavaScript application without negatively affecting
+                                    the rest of your code.
+                                </p>
+                                <ul>
+                                    <li>Examine the anatomy of a large-scale JavaScript application</li>
+                                    <li>Build modern web apps with the capabilities of desktop applications</li>
+                                    <li>Learn best practices for code organization, modularity, and reuse</li>
+                                    <li>Separate your application into different layers of responsibility</li>
+                                    <li>Build efficient, self-describing hypermedia APIs with Node.js</li>
+                                    <li>Test, integrate, and deploy software updates in rapid cycles</li>
+                                    <li>Control resource access with user authentication and authorization</li>
+                                    <li>Expand your application’s reach through internationalization</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
+                            <div class="row text-center">
+                                <div class="col-4 book">JavaScript: The Good Parts</div>
+                                <div class="col-4">Douglas Crockford</div>
+                                <div class="col-4">40$</div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-2">
+                                    <button type="button" class="btn bg-info btn-md" data-name="book5" data-toggle="modal" data-target="#viewDetails" data-whatever="./img/book5.jpg">
+                                        View details
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="details" data-name="book5">
+                                <p>Most programming languages contain good and bad parts, but JavaScript has more than its share
+                                    of the bad, having been developed and released in a hurry before it could be refined.
+                                    This authoritative book scrapes away these bad features to reveal a subset of JavaScript
+                                    that's more reliable, readable, and maintainable than the language as a whole—a subset
+                                    you can use to create truly extensible and efficient code.</p>
+                                <p>Considered the JavaScript expert by many people in the development community, author Douglas
+                                    Crockford identifies the abundance of good ideas that make JavaScript an outstanding
+                                    object-oriented programming language-ideas such as functions, loose typing, dynamic objects,
+                                    and an expressive object literal notation. Unfortunately, these good ideas are mixed
+                                    in with bad and downright awful ideas, like a programming model based on global variables.</p>
+                                <p>When Java applets failed, JavaScript became the language of the Web by default, making its
+                                    popularity almost completely independent of its qualities as a programming language.
+                                    In JavaScript: The Good Parts, Crockford finally digs through the steaming pile of good
+                                    intentions and blunders to give you a detailed look at all the genuinely elegant parts
+                                    of JavaScript, including:</p>
+                                <ul>
+                                    <li>Syntax</li>
+                                    <li>Objects</li>
+                                    <li>Functions</li>
+                                    <li>Inheritance</li>
+                                    <li>Arrays</li>
+                                    <li>Regular expressions</li>
+                                    <li>Methods</li>
+                                    <li>Style</li>
+                                    <li>Beautiful features</li>
+                                </ul>
+                                <p>The real beauty? As you move ahead with the subset of JavaScript that this book presents,
+                                    you'll also sidestep the need to unlearn all the bad parts. Of course, if you want to
+                                    find out more about the bad parts and how to use them badly, simply consult any other
+                                    JavaScript book.</p>
+                                <p>With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight and highly
+                                    expressive language that lets you create effective code, whether you're managing object
+                                    libraries or just trying to get Ajax to run fast. If you develop sites or applications
+                                    for the Web, this book is an absolute must.</p>
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modal window beggin -->
+    <div id="viewDetails" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="text-center">
+                    <img class="img-thumbnail modal-img" alt="book-img">
+                </div>
+                <span class="text-modal m-5"></span>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal window end -->
 </body>
+
 </html>
