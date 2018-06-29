@@ -7,14 +7,54 @@
     <title>task3-bootstrap</title>
 <link href="index.css" rel="stylesheet"></head>
 <body>
-    <div class="wrap">
-        <h2>books:</h2>
-        <ul class="books">
-            <li class="bock-item">High Performance JavaScript</li>
-            <li class="bock-item">Even Faster Web Sites</li>
-            <li class="bock-item">Pro JavaScript Design Patterns</li>
-            <li class="bock-item">JavaScript Подробное руководство</li>
-        </ul>
-    </div>
+    <header class="header-books">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="col header-books__h1">JavaScript Books</h1>
+            </div>
+        </div>
+    </header>
+    <section class=" pt-3 list-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
+                            <div class="row text-center">
+                                <div class="col-4">High Performance JavaScript</div>
+                                <div class="col-4">Nicholas C.</div>
+                                <div class="col-4">60$</div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-2">
+                                    <button type="button" class="btn bg-info" data-toggle="modal" data-target="#exampleModal">
+                                        View details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item shadow p-3 mb-5 bg-white rounded">
+                            <div class="row text-center">
+                                <div class="col-4">Even Faster Web Sites</div>
+                                <div class="col-4"> Steve Souders</div>
+                                <div class="col-4">30$</div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center mt-2">
+                                    <button type="button" class="btn bg-info" data-toggle="modal" data-target="#exampleModal">
+                                        View details
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 <script type="text/javascript" src="index.js"></script></body>
 </html>
