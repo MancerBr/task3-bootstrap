@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     //devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist'
+        contentBase: [path.join(__dirname, 'dist'), __dirname]
     },
     plugins: [
         //new CleanWebpackPlugin(['dist']),
